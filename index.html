@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d88d0ae7;
+        }
+    
+        header {
+            background-color: #2896aa;
+            color:rgb(153, 14, 90);
+            padding: 20px;
+            text-align: center;
+        }
+        .logo{
+            box-shadow: #007BFF;
+            text-align: center;
+            size: 2;
+        }
+
+        .title h1 {
+            margin: 0;
+            font-size: 35px;
+        }
+
+        .title h2 {
+            margin: 5px 0;
+            font-size: 24px;
+        }
+
+        .title h3 {
+            font-size: 18px;
+        }
+
+        .marquee {
+            font-size: 20px;
+        }
+
+        #taskbar {
+            background-color: #333;
+            text-align: center;
+        }
+
+        #taskbar a {
+            display:inline-block;
+            padding: 10px 30px;
+            text-decoration: none;
+            color: rgb(249, 248, 248);
+        }
+        
+
+        #taskbar a:hover {
+            background-color: #0fb1bd;
+        }
+
+        .slider {
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .slider figure {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            overflow: hidden;
+            position: relative;
+            width: 300%;
+            animation: slide 10s linear infinite; /* Change animation duration to 5 seconds */
+        }
+
+        .slider img {
+            width: 33.3333%;
+            height: auto;
+        }
+
+        @keyframes slide {
+            0% { left: 0; }
+            33.33% { left: 0; }
+            33.34% { left: -100%; }
+            66.67% { left: -100%; }
+            66.68% { left: -200%; }
+            100% { left: -200%; }
+        }
+
+        footer {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 0;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <h1>Chameli Devi Group Of Institutions</h1>
+            <h2>Campus Recruitment Training</h2>
+            <h3>sports Quiz</h3>
+            <div class="logo">
+                <img src="cdgi.jpg" alt="logo">
+            </div>
+            <div class="marquee">
+                <marquee behavior="scroll" direction="left">Welcome to our Page!</marquee>
+            </div>
+        </div>
+    </header>
+    <div id="taskbar">
+        <a href="home.html">Home</a>
+        <a href="info.html">Info</a>
+        <a href="about.html">About us</a>
+        <a href="header.html"></a>
+        <a class="taskicon" href="login.html">Login</a>
+        <a class="taskicon" href="register.html">Register</a>
+        <a href="script">Quiz</a>
+    </div>
+    <div class="slider">
+        <figure>
+            <img src="slide0.png" alt="Slide 1">
+            <img src="slide1.jpg" alt="Slide 2">
+            <img src="slide2.jpg" alt="Slide 3">
+        </figure>
+    </div>
+
+    <footer>
+        &copy; 2023 Chameli Devi Group Of Institutions <br>
+        Design and developed by Group 1(AADARSH MALI)
+    </footer>
+</body>
+</html>
